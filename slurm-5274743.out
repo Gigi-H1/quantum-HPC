@@ -1,0 +1,28 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"cuda/11.4"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuda/11.4"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cuquantum"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuquantum"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Traceback (most recent call last):
+  File "/work/ccresearch/gharrabi/expr/exp5/exprz/quantum_simulation.py", line 2, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'

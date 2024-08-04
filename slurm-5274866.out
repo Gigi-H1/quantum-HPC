@@ -1,0 +1,38 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /home/gharrabi/.local/lib/python3.10/site-packages (2.2.2)
+Requirement already satisfied: numpy>=1.22.4 in /home/gharrabi/.local/lib/python3.10/site-packages (from pandas) (1.26.4)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/gharrabi/.local/lib/python3.10/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /home/gharrabi/.local/lib/python3.10/site-packages (from pandas) (2024.1)
+Requirement already satisfied: tzdata>=2022.7 in /home/gharrabi/.local/lib/python3.10/site-packages (from pandas) (2024.1)
+Requirement already satisfied: six>=1.5 in /home/gharrabi/.local/lib/python3.10/site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)
+
+[notice] A new release of pip is available: 23.1.2 -> 24.0
+[notice] To update, run: python3.10 -m pip install --upgrade pip
+Lmod has detected the following error: The following module(s) are unknown:
+"cuda/11.4"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuda/11.4"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cuquantum"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuquantum"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Traceback (most recent call last):
+  File "/work/ccresearch/gharrabi/expr/exp5/exprz/quantum_simulation.py", line 3, in <module>
+    from cuquantum import custatevec as cusv
+ModuleNotFoundError: No module named 'cuquantum'

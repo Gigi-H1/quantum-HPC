@@ -1,0 +1,79 @@
+usage: conda create [-h] [--clone ENV] (-n ENVIRONMENT | -p PATH) [-c CHANNEL]
+                    [--use-local] [--override-channels]
+                    [--repodata-fn REPODATA_FNS] [--strict-channel-priority]
+                    [--no-channel-priority] [--no-deps | --only-deps]
+                    [--no-pin] [--copy] [-C] [-k] [--offline] [-d] [--json]
+                    [-q] [-v] [-y] [--download-only] [--show-channel-urls]
+                    [--file FILE] [--no-default-packages]
+                    [--solver {classic} | --experimental-solver {classic}]
+                    [--dev]
+                    [package_spec ...]
+conda create: error: one of the arguments -n/--name -p/--prefix is required
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: qiskit-aer-gpu in /home/gharrabi/.local/lib/python3.10/site-packages (0.14.2)
+Requirement already satisfied: nvidia-cusolver-cu12>=11.4.5.107 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (11.6.2.40)
+Requirement already satisfied: nvidia-cublas-cu12>=12.1.3.1 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (12.5.2.13)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (12.5.40)
+Requirement already satisfied: cuquantum-cu12>=23.3.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (24.3.0.post1)
+Requirement already satisfied: nvidia-cusparse-cu12>=12.1.0.106 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (12.4.1.24)
+Requirement already satisfied: psutil>=5 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (5.9.8)
+Requirement already satisfied: scipy>=1.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (1.13.1)
+Requirement already satisfied: nvidia-cuda-runtime-cu12>=12.1.105 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (12.5.39)
+Requirement already satisfied: qiskit>=0.45.2 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (1.1.0)
+Requirement already satisfied: numpy>=1.16.3 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-aer-gpu) (1.26.4)
+Requirement already satisfied: cutensornet-cu12==2.4.0.post1 in /home/gharrabi/.local/lib/python3.10/site-packages (from cuquantum-cu12>=23.3.0->qiskit-aer-gpu) (2.4.0.post1)
+Requirement already satisfied: custatevec-cu12==1.6.0.post1 in /home/gharrabi/.local/lib/python3.10/site-packages (from cuquantum-cu12>=23.3.0->qiskit-aer-gpu) (1.6.0.post1)
+Requirement already satisfied: cutensor-cu12<3,>=2.0.1 in /home/gharrabi/.local/lib/python3.10/site-packages (from cutensornet-cu12==2.4.0.post1->cuquantum-cu12>=23.3.0->qiskit-aer-gpu) (2.0.1)
+Requirement already satisfied: sympy>=1.3 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.2->qiskit-aer-gpu) (1.12.1)
+Requirement already satisfied: dill>=0.3 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.2->qiskit-aer-gpu) (0.3.8)
+Requirement already satisfied: typing-extensions in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.2->qiskit-aer-gpu) (4.12.2)
+Requirement already satisfied: stevedore>=3.0.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.2->qiskit-aer-gpu) (5.2.0)
+Requirement already satisfied: symengine>=0.11 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.2->qiskit-aer-gpu) (0.11.0)
+Requirement already satisfied: python-dateutil>=2.8.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.2->qiskit-aer-gpu) (2.9.0.post0)
+Requirement already satisfied: rustworkx>=0.14.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.2->qiskit-aer-gpu) (0.14.2)
+Requirement already satisfied: six>=1.5 in /home/gharrabi/.local/lib/python3.10/site-packages (from python-dateutil>=2.8.0->qiskit>=0.45.2->qiskit-aer-gpu) (1.16.0)
+Requirement already satisfied: pbr!=2.1.0,>=2.0.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from stevedore>=3.0.0->qiskit>=0.45.2->qiskit-aer-gpu) (6.0.0)
+Requirement already satisfied: mpmath<1.4.0,>=1.1.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from sympy>=1.3->qiskit>=0.45.2->qiskit-aer-gpu) (1.3.0)
+WARNING: There was an error checking the latest version of pip.
+Defaulting to user installation because normal site-packages is not writeable
+Collecting qiskit-ibm-provider
+  Downloading qiskit_ibm_provider-0.11.0-py3-none-any.whl (249 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 249.9/249.9 kB 6.6 MB/s eta 0:00:00
+Requirement already satisfied: python-dateutil>=2.8.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-ibm-provider) (2.9.0.post0)
+Requirement already satisfied: numpy>=1.13 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-ibm-provider) (1.26.4)
+Requirement already satisfied: qiskit>=0.45.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-ibm-provider) (1.1.0)
+Collecting websockets>=10.0
+  Downloading websockets-12.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (130 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.2/130.2 kB 43.8 MB/s eta 0:00:00
+Requirement already satisfied: requests>=2.19 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-ibm-provider) (2.32.3)
+Requirement already satisfied: websocket-client>=1.5.1 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-ibm-provider) (1.8.0)
+Requirement already satisfied: urllib3>=1.21.1 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-ibm-provider) (2.2.1)
+Collecting requests-ntlm>=1.1.0
+  Downloading requests_ntlm-1.3.0-py3-none-any.whl (6.6 kB)
+Requirement already satisfied: typing-extensions>=4.3 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit-ibm-provider) (4.12.2)
+Requirement already satisfied: six>=1.5 in /home/gharrabi/.local/lib/python3.10/site-packages (from python-dateutil>=2.8.0->qiskit-ibm-provider) (1.16.0)
+Requirement already satisfied: rustworkx>=0.14.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.0->qiskit-ibm-provider) (0.14.2)
+Requirement already satisfied: sympy>=1.3 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.0->qiskit-ibm-provider) (1.12.1)
+Requirement already satisfied: symengine>=0.11 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.0->qiskit-ibm-provider) (0.11.0)
+Requirement already satisfied: scipy>=1.5 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.0->qiskit-ibm-provider) (1.13.1)
+Requirement already satisfied: stevedore>=3.0.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.0->qiskit-ibm-provider) (5.2.0)
+Requirement already satisfied: dill>=0.3 in /home/gharrabi/.local/lib/python3.10/site-packages (from qiskit>=0.45.0->qiskit-ibm-provider) (0.3.8)
+Requirement already satisfied: idna<4,>=2.5 in /home/gharrabi/.local/lib/python3.10/site-packages (from requests>=2.19->qiskit-ibm-provider) (3.7)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/gharrabi/.local/lib/python3.10/site-packages (from requests>=2.19->qiskit-ibm-provider) (3.3.2)
+Requirement already satisfied: certifi>=2017.4.17 in /home/gharrabi/.local/lib/python3.10/site-packages (from requests>=2.19->qiskit-ibm-provider) (2024.6.2)
+Requirement already satisfied: cryptography>=1.3 in /opt/rit/el9/20230413/app/linux-rhel9-x86_64_v3/gcc-11.2.1/miniconda3-22.11.1-hydt3qzqzg5alf7csvqt24mf7xt64o53/lib/python3.10/site-packages (from requests-ntlm>=1.1.0->qiskit-ibm-provider) (38.0.1)
+Collecting pyspnego>=0.4.0
+  Downloading pyspnego-0.11.1-py3-none-any.whl (130 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.5/130.5 kB 32.7 MB/s eta 0:00:00
+Requirement already satisfied: cffi>=1.12 in /home/gharrabi/.local/lib/python3.10/site-packages (from cryptography>=1.3->requests-ntlm>=1.1.0->qiskit-ibm-provider) (1.16.0)
+Requirement already satisfied: pbr!=2.1.0,>=2.0.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from stevedore>=3.0.0->qiskit>=0.45.0->qiskit-ibm-provider) (6.0.0)
+Requirement already satisfied: mpmath<1.4.0,>=1.1.0 in /home/gharrabi/.local/lib/python3.10/site-packages (from sympy>=1.3->qiskit>=0.45.0->qiskit-ibm-provider) (1.3.0)
+Requirement already satisfied: pycparser in /home/gharrabi/.local/lib/python3.10/site-packages (from cffi>=1.12->cryptography>=1.3->requests-ntlm>=1.1.0->qiskit-ibm-provider) (2.22)
+Installing collected packages: websockets, pyspnego, requests-ntlm, qiskit-ibm-provider
+ERROR: Could not install packages due to an OSError: [Errno 122] Disk quota exceeded: '/home/gharrabi/.local/lib/python3.10/site-packages/websockets'
+
+WARNING: There was an error checking the latest version of pip.
+Traceback (most recent call last):
+  File "/work/ccresearch/gharrabi/expr/exp5/exprz/sixty-bw2.py", line 4, in <module>
+    from qiskit import QuantumCircuit, IBMQ
+ImportError: cannot import name 'IBMQ' from 'qiskit' (/home/gharrabi/.local/lib/python3.10/site-packages/qiskit/__init__.py)

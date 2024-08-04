@@ -1,0 +1,30 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /home/gharrabi/.local/lib/python3.10/site-packages (2.2.2)
+Requirement already satisfied: numpy>=1.22.4 in /home/gharrabi/.local/lib/python3.10/site-packages (from pandas) (1.26.4)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/gharrabi/.local/lib/python3.10/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /home/gharrabi/.local/lib/python3.10/site-packages (from pandas) (2024.1)
+Requirement already satisfied: tzdata>=2022.7 in /home/gharrabi/.local/lib/python3.10/site-packages (from pandas) (2024.1)
+Requirement already satisfied: six>=1.5 in /home/gharrabi/.local/lib/python3.10/site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)
+
+[notice] A new release of pip is available: 23.1.2 -> 24.0
+[notice] To update, run: python3.10 -m pip install --upgrade pip
+Channels:
+ - conda-forge
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed
+
+LibMambaUnsatisfiableError: Encountered problems while solving:
+  - package cuda-version-12.0-hffde075_0 has constraint __cuda >=12 conflicting with __cuda-11.8-0
+
+Could not solve for environment specs
+The following packages are incompatible
+├─ __cuda is requested and can be installed;
+└─ cuda-version 12**  is not installable because it requires
+   └─ __cuda >=12 , which conflicts with any installable versions previously reported.
+
+Traceback (most recent call last):
+  File "/work/ccresearch/gharrabi/expr/exp5/exprz/quantum_simulation.py", line 3, in <module>
+    from cuquantum import custatevec as cusv
+ModuleNotFoundError: No module named 'cuquantum'
